@@ -10,6 +10,8 @@ html {
     font-family: "Poppins";
 }
 
+/* Nav - Hero-1 */
+
 .navbar-nav .nav-link.active {
     color: #44d62c;
 }
@@ -66,4 +68,290 @@ html {
 #btn-register:hover {
     background-color: #005700;
     color: rgb(254, 254, 254, 0.65);
+}
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.tagline-text {
+    color: #fefefe;
+    font-size: 60px;
+    text-align: end;
+    margin: 0;
+}
+
+.tagline-text-2 {
+    color: #fefefe;
+    font-size: 60px;
+    text-align: start;
+    margin: 0;
+}
+
+.tagline-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.tagline-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #050607;
+    margin: 0;
+}
+
+/* End of Nav - Hero-1 */
+
+/* Hero-2 */
+
+.hero-img {
+    display: flex;
+    justify-content: end;
+    flex-grow: 6;
+    width: 100%;
+}
+
+.cta {
+    background: none;
+    border: 1px #fefefe solid;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #fefefe;
+}
+
+.cta:hover {
+    background-color: #44d62c;
+    color: #050607;
+    border: none;
+}
+
+/* End of Hero-2 */
+
+/* impact */
+
+.impact-header {
+    margin-top: 60px;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.grid-item img {
+    width: 50px;
+    height: auto;
+}
+
+.item-1 {
+    grid-column: span 2;
+    background: url("https://i.ibb.co/rdybNbK/dampak-1.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item-2 {
+    background: url("https://i.ibb.co/WzFRtDK/dampak-2.png") 100% 100%;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.item-3 {
+    background: url("https://i.ibb.co/wSj0kP9/dampak-3.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item-4 {
+    background: url("https://i.ibb.co/XyR6xCp/dampak-4.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item-5 {
+    background: url("https://i.ibb.co/MSMHSDp/dampak-5.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item-6 {
+    background: url("https://i.ibb.co/s9jRg7n/dampak-6.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item-7 {
+    background: url("https://i.ibb.co/kypjPck/dampak-7.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+/* End of impact */
+
+/* Factor */
+
+.slider-container {
+    background-color: #050607;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* End of Factor */
+
+/* Solution */
+
+.solution {
+    background-image: url("https://i.ibb.co/1m3ttrX/bg-solusi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.line {
+    border-top: 1px solid rgb(202, 202, 202, 0.25);
+}
+
+.solution-row {
+    display: flex;
+}
+
+.solution-desc:nth-child(1) {
+    flex: 2;
+}
+
+.solution-desc:nth-child(2) {
+    flex: 5;
+}
+
+.solution-desc:nth-child(3) {
+    flex: 5;
+}
+
+.solution-desc {
+    font-size: 14px;
+    color: rgb(254, 254, 254, 0.8);
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer {
+    padding: 0 5rem;
+    margin-top: 7.5rem;
+    position: relative;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-content:nth-child(1) {
+    flex: 10;
+}
+
+.footer-content:nth-child(2) {
+    flex: 2;
+}
+
+.footer-header {
+    font-size: 14px;
+    color: #fefefe;
+}
+
+.footer-desc {
+    font-size: 12px;
+    color: rgb(254, 254, 254, 0.8);
+    width: 50%;
+}
+
+.input-container {
+    display: flex;
+    width: 30%;
+    padding: 0.5rem 0;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #292b31;
+    border-radius: 18px 0 0 18px;
+    background-color: #292b31;
+    color: #fefefe;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    border: 2px solid #292b31;
+    border-radius: 18px;
+    background-color: #44d62c;
+    color: #050607;
+    cursor: pointer;
+    margin-left: -13%;
+}
+
+.input-container button:hover {
+    background-color: #005700;
+    border-color: #005700;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+.no-indent {
+    display: flex;
+    gap: 3.75rem;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+footer li {
+    padding-left: 0;
+    font-size: 14px;
+    color: rgb(254, 254, 254, 0.8);
+    cursor: pointer;
+}
+
+.footer-credit {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    text-align: end;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+/* Global */
+
+.card-box {
+    background-color: #161515;
+    border-radius: 12px;
+    padding: 24px;
 }
