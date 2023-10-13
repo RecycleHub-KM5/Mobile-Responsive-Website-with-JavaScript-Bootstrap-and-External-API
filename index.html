@@ -13,6 +13,10 @@
         />
         <link
             rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
             href="assets/plugin/fontawesome-6.4.2/css/all.min.css"
         />
         <link rel="stylesheet" href="/assets/css/core.css" />
@@ -45,7 +49,7 @@
                                         ></span>
                                     </button>
                                     <div
-                                        class="collapse navbar-collapse d-flex justify-content-end"
+                                        class="collapse navbar-collapse"
                                         id="navbarNav"
                                     >
                                         <div class="wrapper">
@@ -61,7 +65,7 @@
                                                 <li class="nav-item">
                                                     <a
                                                         class="nav-link color-light poppins-medium font-paragraph ms-3"
-                                                        href="#"
+                                                        href="/pages/gallery.html"
                                                         >Galeri</a
                                                     >
                                                 </li>
@@ -74,13 +78,13 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a
-                                                        class="nav-link color-light poppins-medium font-paragraph ms-3"
+                                                        class="nav-link color-light poppins-medium font-paragraph ms-3 me-5"
                                                         >Produk</a
                                                     >
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="wrapper ms-5">
+                                        <div class="wrapper ms-3">
                                             <a
                                                 href="https://skilvul.com"
                                                 id="btn-login"
@@ -326,35 +330,42 @@
                                 Faktor-faktor penyebab <br />
                                 penumpukan sampah
                             </h1>
-                            <div class="card-box mt-4">
-                                <div class="slider-container p-4">
-                                    <div class="row">
+                            <div class="card-box mt-4 slider-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slider-item">
                                         <div
-                                            class="left col-sm-5 col-md-5 col-lg-5 my-auto text-justify lh-base"
+                                            class="col-sm-7 col-md-7 col-lg-7 my-auto p-3"
                                         >
-                                            <h4
-                                                class="poppins-bold color-light font-subtitle my-3"
+                                            <h1
+                                                class="factor-title poppins-bold font-title color-light"
                                             >
                                                 KURANGNYA TPA
-                                            </h4>
-                                            <div class="ul">
+                                            </h1>
+                                            <ul id="first-swiper-slide">
                                                 <li
-                                                    class="item-list color-light poppins-regular font-paragraph"
+                                                    class="list-item color-light poppins-medium font-paragraph"
                                                 >
                                                     Volume sampah sangat besar
                                                     dan tidak diimbangi oleh
                                                     daya tamping TPA sehingga
                                                     melebihi kapasitasnya.
                                                 </li>
+                                                <button
+                                                    onclick="this.style.display = 'none';handleFirstCard()"
+                                                    id="btn-hidden"
+                                                    class="list-item color-light poppins-medium font-paragraph"
+                                                >
+                                                    .....baca selengkapnya
+                                                </button>
                                                 <li
-                                                    class="item-list color-light poppins-regular font-paragraph"
+                                                    class="hidden-item color-light poppins-medium font-paragraph"
                                                 >
                                                     Lahan TPA semakin menyempit
                                                     akibat tergusur oleh
                                                     pengunaan lain.
                                                 </li>
                                                 <li
-                                                    class="item-list color-light poppins-regular font-paragraph"
+                                                    class="hidden-item color-light poppins-medium font-paragraph"
                                                 >
                                                     Jarak TPA dan pusat sampah
                                                     relatif jauh hingga waktu
@@ -362,22 +373,75 @@
                                                     kurang efektif.
                                                 </li>
                                                 <li
-                                                    class="item-list color-light poppins-regular font-paragraph"
+                                                    class="hidden-item color-light poppins-medium font-paragraph"
                                                 >
                                                     Fasilitas pengakutan sampah
                                                     terbatas dan tidak mampu
                                                     menganggut seluruh sampah.
                                                 </li>
-                                            </div>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-sm-5 col-md-5 col-lg-5">
                                             <img
                                                 src="assets/images/factor-1.png"
-                                                class="slider-img"
+                                                class="factor-img"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="swiper-slide slider-item d-flex"
+                                    >
+                                        <div
+                                            class="col-sm-7 col-md-7 col-lg-7 my-auto p-3"
+                                        >
+                                            <h1
+                                                class="factor-title poppins-bold font-title color-light"
+                                            >
+                                                KURANGNYA TPA
+                                            </h1>
+                                            <ul>
+                                                <li
+                                                    class="list-item color-light poppins-medium font-paragraph"
+                                                >
+                                                    Volume sampah sangat besar
+                                                    dan tidak diimbangi oleh
+                                                    daya tamping TPA sehingga
+                                                    melebihi kapasitasnya.
+                                                </li>
+                                                <li
+                                                    class="list-item color-light poppins-medium font-paragraph"
+                                                >
+                                                    Lahan TPA semakin menyempit
+                                                    akibat tergusur oleh
+                                                    pengunaan lain.
+                                                </li>
+                                                <li
+                                                    class="list-item color-light poppins-medium font-paragraph"
+                                                >
+                                                    Jarak TPA dan pusat sampah
+                                                    relatif jauh hingga waktu
+                                                    untuk menganggut sampah
+                                                    kurang efektif.
+                                                </li>
+                                                <li
+                                                    class="list-item color-light poppins-medium font-paragraph"
+                                                >
+                                                    Fasilitas pengakutan sampah
+                                                    terbatas dan tidak mampu
+                                                    menganggut seluruh sampah.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-5 col-md-5 col-lg-5">
+                                            <img
+                                                src="assets/images/factor-1.png"
+                                                class="factor-img"
                                             />
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -499,10 +563,62 @@
             </div>
         </footer>
 
+        <script>
+            const handleCard = ({ data, target }) => {
+                const swiperSlide = document.querySelector(target);
+                data.forEach((item) => {
+                    swiperSlide.innerHTML += `
+        <li
+            class="detail-factor list-item color-light poppins-medium font-paragraph"
+        >
+            ${item.content}
+        </li>
+        `;
+                });
+            };
+
+            const handleFirstCard = () =>
+                handleCard({
+                    data: [
+                        {
+                            id: 1,
+                            content: `Volume sampah sangat besar
+            dan tidak diimbangi oleh
+            daya tamping TPA sehingga
+            melebihi kapasitasnya.`,
+                        },
+                        {
+                            id: 2,
+                            content: `Jarak TPA dan pusat sampah
+            relatif jauh hingga waktu
+            untuk menganggut sampah
+            kurang efektif.`,
+                        },
+                        {
+                            id: 3,
+                            content: `Fasilitas pengakutan sampah
+            terbatas dan tidak mampu
+            menganggut seluruh sampah.`,
+                        },
+                    ],
+                    target: "#first-swiper-slide",
+                });
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".slider-container", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
     </body>
 </html>

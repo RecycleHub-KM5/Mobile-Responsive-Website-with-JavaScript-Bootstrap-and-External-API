@@ -32,6 +32,10 @@ html {
     background-color: #fefefe;
 }
 
+.navbar-collapse {
+    justify-content: end;
+}
+
 .hero-1 {
     background: url("https://i.ibb.co/9pvGJxs/tagline.png") center scroll;
     background-repeat: no-repeat;
@@ -215,13 +219,55 @@ html {
 
 /* Factor */
 
+.factor-img {
+    max-width: 100%;
+    height: auto;
+    /* position: absolute; */
+}
 .slider-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.slider-item {
+    position: relative;
+    display: flex;
     background-color: #050607;
     border-radius: 12px;
+    flex: 0 0 90%;
+    margin-right: 12px;
     overflow: hidden;
 }
 
-/* End of Factor */
+#btn-hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .factor-img {
+        max-width: unset;
+    }
+
+    #btn-hidden {
+        display: block;
+    }
+
+    .slider-item {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        height: auto;
+    }
+
+    .slider-item > div:first-child {
+        width: 100%;
+    }
+
+    .hidden-item {
+        display: none;
+    }
+}
+
+/* End of Factor
 
 /* Solution */
 
