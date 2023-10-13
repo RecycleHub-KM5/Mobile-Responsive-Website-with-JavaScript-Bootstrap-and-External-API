@@ -70,3 +70,4 @@ function checkboxIsChecked() {
 
 var formu= document.getElementById("formulir");
 formu.addEventListener("submit", submit);
+

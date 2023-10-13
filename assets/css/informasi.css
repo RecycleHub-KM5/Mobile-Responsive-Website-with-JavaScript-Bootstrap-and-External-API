@@ -12,7 +12,16 @@
       color: #6BF579;
     }
     
-    
+    /* section{
+        height: 100vh;
+        width: 100vw;
+    } */
+    .secfooter{
+        height: 20vh;
+        width: 100vw;
+        /* background-color: #000000; */
+        
+    }
     .nav:hover {
       color: #6BF579;
       font-weight: 600;
@@ -220,9 +229,9 @@
     }
     
     .background-long{
-    background: url(https://media.discordapp.net/attachments/1153638653332029440/1153665559527956561/Rectangle_161.png);
+    background:url(https://cdn.discordapp.com/attachments/1153638653332029440/1153665559527956561/Rectangle_161.png);
     background-repeat: no-repeat;
-    height: 100%;
+   
     }
     
     .card-form{
@@ -322,4 +331,26 @@
     }
     #link{
     color:white;
+    }
+    .solusi{
+        font-size: 80px;
+        color: white;
+    }
+    .point-solusi img{
+        height: 10vh;
+        width: 5vw;
+    }
+    .point-solusi h3{
+        color: white;
+        font-size: 25px;
+    }
+    .point-solusi div{
+        display: flex;
+        align-items: center;
+    }
+    #solusi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10rem 5rem 10rem 5rem;
     }
