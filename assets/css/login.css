@@ -69,13 +69,13 @@ html {
 .container-input {
   width: 330px;
   /* align-items: center;
-  align-content: center; */
+    align-content: center; */
   margin: 50px auto;
 }
 
 /* input {
-  background-color: #050607;
-} */
+    background-color: #050607;
+  } */
 .header h1 {
   font-family: PoppinsBold;
   font-size: 24px;
@@ -122,9 +122,7 @@ input.form-control {
 }
 
 .bagian-email,
-.bagian-pass,
-.bagian-pass2,
-.checkbox {
+.bagian-pass {
   margin-top: -13px;
 }
 
@@ -148,42 +146,43 @@ input.form-control {
 .icon-mata:hover {
   cursor: pointer;
 }
-
-.form-check-label {
+.lupa-pass {
+  display: flex;
   font-size: 12px;
   color: #fefefe;
+  justify-content: end;
 }
-.form-check-label a {
+.lupa-pass a {
   text-decoration: none;
   color: #44d62c;
   font-family: PoppinsSemiBold;
   font-size: 12px;
 }
-.btn-daptar {
+.btn-masuk {
   margin-top: 10px;
   font-size: 12px;
   font-family: Poppins;
   text-align: center;
 }
-.btn-daptar button {
+.btn-masuk button {
   background-color: #44d62c;
   font-size: 14px;
   font-family: PoppinsBold;
   color: #050607;
 }
 
-.btn-daptar button:hover {
+.btn-masuk button:hover {
   background-color: #44d62c;
   color: #050607;
 }
 
-.punya-akun {
-  margin-top: 10px;
+.blum-punya-akun {
+  margin-top: 15px;
   font-family: Poppins;
   color: #fefefe;
 }
 
-.punya-akun a {
+.blum-punya-akun a {
   text-decoration: none;
   font-family: PoppinsSemiBold;
   color: #44d62c;
