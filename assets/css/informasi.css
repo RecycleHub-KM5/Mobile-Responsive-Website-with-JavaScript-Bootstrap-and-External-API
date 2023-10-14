@@ -1,0 +1,356 @@
+
+*{margin: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    }
+    
+    body {
+      background: #050607;
+    }
+    
+    span {
+      color: #6BF579;
+    }
+    
+    /* section{
+        height: 100vh;
+        width: 100vw;
+    } */
+    .secfooter{
+        height: 20vh;
+        width: 100vw;
+        /* background-color: #000000; */
+        
+    }
+    .nav:hover {
+      color: #6BF579;
+      font-weight: 600;
+    }
+    .container-causes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .top-causes {
+      width: 80%;
+      display: grid;
+      color: white;
+      grid-template-columns: 30% 70%;
+      gap: 25px;
+      margin-bottom: 25px;
+    }
+    .bot-causes {
+      width: 80%;
+      display: grid;
+      color: white;
+      grid-template-columns: 70% 30%;
+      gap: 25px;
+    }
+    .no-causes{
+      color:#6BF579;
+    }
+    .card-causes {
+      height: 280px;
+      border-radius: 10px;
+    }
+    
+    .causes-1 {
+      background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1161656494366937088/container1.png?ex=653917ea&is=6526a2ea&hm=2aa1ae14bd93767f3fffa1bff2e53473730b22c0f24486908d854de47b870229&);
+      background-size: 100% 100%;
+    }
+    .causes-2 {
+      background: url(https://media.discordapp.net/attachments/1153638653332029440/1161656786038833284/container2.png?ex=65391830&is=6526a330&hm=29c01f7a6cf56dabff3ebcfd4fb3ffdf71cb74e138bba298c92c83aae7b751d4&=&width=1313&height=625);
+      background-size: 100% 100%;
+    }
+    .causes-3 {
+      background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1161656785686507590/container3.png?ex=65391830&is=6526a330&hm=063328d0a8dd9755f84e1aa3f505b0ce044d61847b58ab857f77d0c15d71fdca&);
+      background-size: 100% 100%;
+    }
+    .causes-4 {
+      background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1161656785397088307/container4.png?ex=65391830&is=6526a330&hm=e227c3df569948abce83980e5268daf2789490fa08487da626acd3a306ea02c7&);
+      background-size: 100% 100%;
+    }
+    .content-causes {
+      padding: 1rem;
+    }
+    
+    #tema {
+    height: 90vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    }
+    
+    .left-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .judul {
+      font-size: 80px;
+    }
+    
+    .bgheader {
+    background-image: url(https://cdn.discordapp.com/attachments/1153638653332029440/1153643336306020424/bgheader.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    }
+    
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2rem 0;
+    }
+    ul {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+    }
+    a {
+    text-decoration: none;
+    color: white;
+    }
+    
+    .dampak {
+    background-color: #242424A6;
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    border-radius: 10px;
+    }
+    .subjudul {
+    text-align: center;
+    color: white;
+    margin: 3rem;
+    }
+    .tataletak {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    }
+    .card-container {
+    background: #242424A6;
+    width: 25%;
+    height: 50vh;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows:49% 48%;
+    padding: 15px;
+    }
+    
+    .card-bg-img-1 {
+    background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1161659416911814716/gambar1.png?ex=65391aa3&is=6526a5a3&hm=27b2d70b35b50bc8e605430a024d9af7b06664d723cd0b3c3dc3df549f3f6353&);
+    }
+    .card-bg-img-2 {
+    background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1161659416626593852/gambar2.png?ex=65391aa3&is=6526a5a3&hm=13ad048de382ecf026f22489570e5097ea5e25d5734b6df8392cd11a60c13b75&);
+    }
+    .card-bg-img-3 {
+    background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1161659416358174783/gambar3.png?ex=65391aa3&is=6526a5a3&hm=ea3e089d28227d34a6fb43e3b404022a39aaae49628f2b110a5684238987eda8&);
+    }
+    .card-bg-img-4 {
+    background: url(https://media.discordapp.net/attachments/1153638653332029440/1153858213813420032/dampak4.png);
+    }
+    .card-top {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+    }
+    .card-bot{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    }
+    
+    .ajakan {
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    text-align: center;
+    }
+    .tombol {
+    padding: 0.7rem 3rem;
+    border: 1px solid #6BF579;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 16px;
+    font-weight: 600;
+    }
+    .tombol:hover {
+    background-color: #6BF579;
+    color: black;
+    }
+    .subdiv {
+    padding: 10px;
+    height: 210px;
+    width: 94%;
+    color: white;
+    border-radius: 10px;
+    }
+    .container {
+      margin: 0 5rem;
+    }
+    .sectionakhir{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .container-solution {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    color: white;
+    height: 100vh;
+    }
+    
+    .left-solution{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    }
+    
+    .background-long{
+    background:url(https://cdn.discordapp.com/attachments/1153638653332029440/1153665559527956561/Rectangle_161.png);
+    background-repeat: no-repeat;
+   
+    }
+    
+    .card-form{
+    display: flex;
+    flex-direction: column;
+    background: #050607;
+    color: white;
+    border-radius: 18px;
+    }
+    
+    .container-form{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    gap: 5%;
+    }
+    
+    .title-form{
+    text-align: center;
+    padding: 2rem;
+    }
+    .image-form{
+    background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1153852124996829184/Rectangle_384.png);
+    border-radius: 18px 0 18px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    background-repeat : no-repeat;
+    }
+    
+    .input-area{
+    padding: 2rem;
+    }
+    .input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #6BF579;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: white;
+    }
+    
+    .tombol-sm {
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    }
+    
+    #check{
+    font-size: 12px;
+    }
+    
+    #warning{
+    color: black;
+    margin-top: 1rem;
+    background: yellow;
+    padding: 0.2rem 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    width: max-content;
+    display: none;
+    }
+    
+    #formulir {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 80%;
+    }
+    #footer{
+    background-color: #000000;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    }
+    .contact{
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    }
+    #subfooter{
+    margin-top: 50px;
+    }
+    .iconcontact{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    } 
+    #description {
+    font-size: medium;
+    }
+    #link{
+    color:white;
+    }
+    .solusi{
+        font-size: 80px;
+        color: white;
+    }
+    .point-solusi img{
+        height: 10vh;
+        width: 5vw;
+    }
+    .point-solusi h3{
+        color: white;
+        font-size: 25px;
+    }
+    .point-solusi div{
+        display: flex;
+        align-items: center;
+    }
+    #solusi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10rem 5rem 10rem 5rem;
+    }
