@@ -13,10 +13,11 @@
         />
         <link
             rel="stylesheet"
-            href="assets/plugin/fontawesome-6.4.2/css/all.min.css"
+            href="/assets/plugin/fontawesome-6.4.2/css/all.min.css"
         />
         <link rel="stylesheet" href="/assets/css/core.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
     </head>
     <body>
         <div class="container">
@@ -38,7 +39,7 @@
                                 aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
-                                <span class="navbar-toggler-icon"></span>
+                                <img src="../assets/icons/bar.svg" />
                             </button>
                             <div
                                 class="collapse navbar-collapse"
@@ -156,48 +157,65 @@
         </section>
         <!-- End of Gallery -->
 
-        <section class="tagline-footer d-flex justify-content-center mt-5">
-            <img src="../assets/images/footer-tagline.png" />
-        </section>
-
-        <footer>
-            <hr class="line" />
-            <div class="footer-row">
-                <div class="footer-content">
-                    <h3 class="footer-header poppins-medium">
-                        Tentang RecycleHub
-                    </h3>
-                    <p class="footer-desc" id="description">
-                        RecycleHub bertujuan untuk mengurangi sampah dengan
-                        menyajikan konten edukasi dan daur ulang untuk masa
-                        depan yang lebih baik di generasi selanjutnya.
-                    </p>
-                    <div class="input-container">
-                        <input
-                            type="text"
-                            placeholder="Masukkan Email..."
-                            class="font-paragraph poppins-regular"
+        <section class="tagline-footer mt-5">
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <img
+                            src="/assets/images/footer-tagline.png"
+                            class="img-fluid"
                         />
-                        <button
-                            type="submit"
-                            class="poppins-bold font-paragraph"
-                        >
-                            Kirim
-                        </button>
-                    </div>
-                    <div class="footer-row">
-                        <ul class="no-indent">
-                            <li>Galeri</li>
-                            <li>Informasi</li>
-                            <li>Produk</li>
-                            <li>Bantuan</li>
-                        </ul>
                     </div>
                 </div>
-                <div class="footer-content">
-                    <p class="footer-credit poppins-regular">
-                        Copyright ©2023, RecycleHub.
-                    </p>
+            </div>
+        </section>
+
+        <footer class="mt-5">
+            <hr class="line" />
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-left col-sm-7 col-md-10 col-lg-10">
+                        <h3 class="footer-header poppins-medium">
+                            Tentang RecycleHub
+                        </h3>
+                        <p class="footer-desc" id="description">
+                            RecycleHub bertujuan untuk mengurangi sampah dengan
+                            menyajikan konten edukasi dan daur ulang untuk masa
+                            depan yang lebih baik di generasi selanjutnya.
+                        </p>
+                        <div class="input-container">
+                            <input
+                                type="text"
+                                placeholder="Masukkan Email..."
+                                class="font-paragraph poppins-regular"
+                            />
+                            <button
+                                type="submit"
+                                class="poppins-bold font-paragraph"
+                            >
+                                Kirim
+                            </button>
+                        </div>
+                        <div class="footer-row">
+                            <ul class="no-indent">
+                                <li>
+                                    <a
+                                        href="gallery.html"
+                                        class="color-light font-paragraph"
+                                        >Galeri</a
+                                    >
+                                </li>
+                                <li>Informasi</li>
+                                <li>Produk</li>
+                                <li>Bantuan</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right col-sm-5 col-md-2 col-lg-2 my-">
+                        <p class="footer-credit poppins-regular">
+                            Copyright ©2023, RecycleHub.
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
