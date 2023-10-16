@@ -88,9 +88,6 @@
       justify-content: center;
     }
     
-    .judul {
-      font-size: 80px;
-    }
     
     .bgheader {
     background-image: url(https://cdn.discordapp.com/attachments/1153638653332029440/1153643336306020424/bgheader.png);
@@ -181,7 +178,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
     }
     .tombol {
@@ -333,16 +330,18 @@
     color:white;
     }
     .solusi{
-        font-size: 80px;
+        font-size: 60px;
         color: white;
     }
     .point-solusi img{
-        height: 10vh;
-        width: 5vw;
+        height: 8vh;
+        width: 4vw;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
     .point-solusi h3{
         color: white;
-        font-size: 25px;
+        font-size: 15px;
     }
     .point-solusi div{
         display: flex;
@@ -350,7 +349,8 @@
     }
     #solusi{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 30%;
         align-items: center;
         margin: 10rem 5rem 10rem 5rem;
     }
