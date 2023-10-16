@@ -29,7 +29,11 @@ html {
 }
 
 .navbar-toggler {
-    background-color: #fefefe;
+    background-color: transparent;
+}
+
+.navbar-collapse {
+    justify-content: end;
 }
 
 .hero-1 {
@@ -128,7 +132,7 @@ html {
     width: 100%;
 }
 
-.cta {
+.btn-cta {
     background: none;
     border: 1px #fefefe solid;
     border-radius: 8px;
@@ -136,7 +140,7 @@ html {
     color: #fefefe;
 }
 
-.cta:hover {
+.btn-cta:hover {
     background-color: #44d62c;
     color: #050607;
     border: none;
@@ -215,13 +219,35 @@ html {
 
 /* Factor */
 
+.factor-img {
+    max-width: 100%;
+    height: auto;
+    /* position: absolute; */
+}
 .slider-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.slider-item {
+    position: relative;
+    display: flex;
     background-color: #050607;
     border-radius: 12px;
+    flex: 0 0 90%;
+    margin-right: 12px;
     overflow: hidden;
 }
 
-/* End of Factor */
+#btn-hidden {
+    display: none;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+/* End of Factor
 
 /* Solution */
 
@@ -261,23 +287,19 @@ html {
 
 /* Footer */
 
-footer {
+/* footer {
     padding: 0 5rem;
     margin-top: 7.5rem;
     position: relative;
-}
+} */
 
-.footer-row {
-    display: flex;
-}
-
-.footer-content:nth-child(1) {
+/* .footer-content:nth-child(1) {
     flex: 10;
 }
 
 .footer-content:nth-child(2) {
     flex: 2;
-}
+} */
 
 .footer-header {
     font-size: 14px;
@@ -327,10 +349,18 @@ footer {
 
 .no-indent {
     display: flex;
-    gap: 3.75rem;
+    gap: 60px;
     list-style: none;
-    padding: 0.5rem 0;
+    padding: 8px 0;
     margin: 0;
+}
+
+.no-indent li a {
+    text-decoration: none;
+}
+
+.no-indent li a:hover {
+    color: #44d62c;
 }
 
 footer li {
@@ -338,6 +368,14 @@ footer li {
     font-size: 14px;
     color: rgb(254, 254, 254, 0.8);
     cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-right {
+    position: relative;
 }
 
 .footer-credit {
