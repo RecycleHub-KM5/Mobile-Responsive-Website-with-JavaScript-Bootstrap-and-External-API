@@ -1,586 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>RecycleHub</title>
-        <!-- CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="assets/plugin/fontawesome-6.4.2/css/all.min.css"
-        />
-        <link rel="stylesheet" href="/assets/css/core.css" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="/assets/css/responsive.css" />
-    </head>
-    <body>
-        <main>
-            <section class="hero-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <nav class="navbar navbar-expand-lg">
-                                <div class="container-fluid">
-                                    <a
-                                        class="navbar-brand color-light poppins-bold"
-                                        href="#"
-                                        >RecycleHub</a
-                                    >
-                                    <button
-                                        class="navbar-toggler"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#navbarNav"
-                                        aria-controls="navbarNav"
-                                        aria-expanded="false"
-                                        aria-label="Toggle navigation"
-                                    >
-                                        <img src="assets/icons/bar.svg" />
-                                    </button>
-                                    <div
-                                        class="collapse navbar-collapse"
-                                        id="navbarNav"
-                                    >
-                                        <div class="wrapper">
-                                            <ul class="navbar-nav">
-                                                <li class="nav-item">
-                                                    <a
-                                                        class="nav-link active color-light poppins-medium font-paragraph ms-3"
-                                                        aria-current="page"
-                                                        href="#"
-                                                        >Home</a
-                                                    >
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a
-                                                        class="nav-link color-light poppins-medium font-paragraph ms-3"
-                                                        href="/pages/gallery.html"
-                                                        >Galeri</a
-                                                    >
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a
-                                                        class="nav-link color-light poppins-medium font-paragraph ms-3"
-                                                        href="#"
-                                                        >Informasi</a
-                                                    >
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a
-                                                        class="nav-link color-light poppins-medium font-paragraph ms-3 me-5"
-                                                        >Produk</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="wrapper ms-3">
-                                            <a
-                                                href="https://skilvul.com"
-                                                id="btn-login"
-                                                class="poppins-semiBold"
-                                                >Masuk</a
-                                            >
-                                            <button
-                                                id="btn-register"
-                                                class="poppins-semiBold"
-                                            >
-                                                Daftar
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </nav>
-
-                            <div class="tagline position-relative">
-                                <div
-                                    class="tagline-text-wrapper"
-                                    style="flex-grow: 5"
-                                >
-                                    <h4 class="tagline-text poppins-bold">
-                                        RECYCLE
-                                    </h4>
-                                    <h4 class="tagline-text poppins-bold">
-                                        HUB
-                                    </h4>
-                                </div>
-                                <div class="tagline-img" style="flex-grow: 2">
-                                    <img
-                                        src="https://i.ibb.co/8j7Czb2/hero-1.png"
-                                        id="tagline-hero-img"
-                                    />
-                                </div>
-                                <div
-                                    class="tagline-text-2"
-                                    style="flex-grow: 5"
-                                >
-                                    <h1 class="tagline-text-2 poppins-bold">
-                                        FOR BETTER
-                                    </h1>
-                                    <div class="tagline-wrapper">
-                                        <div class="tagline-card poppins-bold">
-                                            GENERATION
-                                        </div>
-                                        <h1 class="tagline-text-2 poppins-bold">
-                                            FUTURE
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RecycleHub</title>
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugin/fontawesome-6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/core.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand color-light poppins-bold" href="#"
+                    >RecycleHub</a
+                  >
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <img src="assets/icons/bar.svg" />
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="wrapper">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active color-light poppins-medium font-paragraph ms-3"
+                            aria-current="page"
+                            href="#"
+                            >Home</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link color-light poppins-medium font-paragraph ms-3"
+                            href="/pages/gallery.html"
+                            >Galeri</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link color-light poppins-medium font-paragraph ms-3"
+                            href="/pages/informasi.html"
+                            >Informasi</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link color-light poppins-medium font-paragraph ms-3 me-5"
+                            >Produk</a
+                          >
+                        </li>
+                      </ul>
                     </div>
+                    <div class="wrapper ms-3">
+                      <a
+                        href="https://skilvul.com"
+                        id="btn-login"
+                        class="poppins-semiBold"
+                        >Masuk</a
+                      >
+                      <button id="btn-register" class="poppins-semiBold">
+                        Daftar
+                      </button>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </nav>
 
-            <section class="hero-2 mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <div
-                                class="card-box hero-wrapper d-flex align-items-center"
-                            >
-                                <div class="hero-text" style="flex-grow: 4">
-                                    <h1
-                                        class="hero-header poppins-bold font-title color-light"
-                                    >
-                                        Kenali lebih dalam permasalahan sampah
-                                    </h1>
-                                    <h4
-                                        class="hero-desc poppins-regular font-paragraph color-light lh-base mt-4"
-                                    >
-                                        Seperti yang kita ketahui, sampah
-                                        merupakan salah satu permasalahan yang
-                                        sedang di selesaikan, namun seringkali
-                                        masyarakat masih membuang sampah
-                                        sembarangan dan masih banyak sampah yang
-                                        tidak terkelola dengan baik. RecycleHub
-                                        hadir untuk membantu mengatasi
-                                        permasalahan sampah.
-                                    </h4>
-                                    <button
-                                        class="btn-cta mt-4"
-                                        onclick="alert('test')"
-                                    >
-                                        <div
-                                            class="wrapper d-flex align-items-center"
-                                        >
-                                            <p
-                                                class="cta-text poppins-bold font-paragraph my-auto"
-                                            >
-                                                Pelajari lebih lanjut
-                                            </p>
-                                            <i
-                                                class="fa-solid fa-arrow-right ms-2"
-                                            ></i>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div style="flex-grow: 2"></div>
-                                <div class="hero-img" style="flex-grow: 6">
-                                    <img
-                                        src="assets/images/hero-2.png"
-                                        class="w-75"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="tagline position-relative">
+                <div class="tagline-text-wrapper" style="flex-grow: 5">
+                  <h4 class="tagline-text poppins-bold">RECYCLE</h4>
+                  <h4 class="tagline-text poppins-bold">HUB</h4>
                 </div>
-            </section>
-
-            <section class="impact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <header>
-                                <h1
-                                    class="impact-title poppins-bold font-title color-light text-center mt-5"
-                                >
-                                    Dampak Sampah Pada Lingkungan
-                                </h1>
-                            </header>
-                            <div class="grid-container">
-                                <div class="grid-item item-1">
-                                    <img
-                                        src="https://i.ibb.co/0fTLMK0/botol.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Pencemaran Lingkungan
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Sampah yang tidak dikelola dengan baik
-                                        mencemari udara, tanah, dan air.
-                                    </h3>
-                                </div>
-                                <div class="grid-item item-2">
-                                    <img
-                                        src="https://i.ibb.co/CPjp60g/tupai.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Kehilangan Habitat
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Tumpukan sampah merusak habitat alami
-                                        dan mengancam spesies.
-                                    </h3>
-                                </div>
-                                <div class="grid-item item-3">
-                                    <img
-                                        src="https://i.ibb.co/NTQrjMj/tikus.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Kesehatan Masyarakat
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Sampah dapat menyebabkan penyebaran
-                                        penyakit dan masalah kesehatan.
-                                    </h3>
-                                </div>
-                                <div class="grid-item item-4">
-                                    <img
-                                        src="https://i.ibb.co/g9BjBFH/rumah.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Kerusakan Estetika
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Sampah merusak penampilan lingkungan dan
-                                        daerah wisata.
-                                    </h3>
-                                </div>
-                                <div class="grid-item item-5">
-                                    <img
-                                        src="https://i.ibb.co/tKrTXyR/pohon.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Gangguan Ekosistem
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Pengelolaan sampah yang buruk mengganggu
-                                        keseimbangan alam.
-                                    </h3>
-                                </div>
-                                <div class="grid-item item-6">
-                                    <img
-                                        src="https://i.ibb.co/sqVmyvD/babi.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Kerugian Ekonomi
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Masalah sampah menimbulkan biaya tinggi
-                                        dan kerusakan infrastruktur.
-                                    </h3>
-                                </div>
-                                <div class="grid-item item-7">
-                                    <img
-                                        src="https://i.ibb.co/mS42zmW/udara.png"
-                                        class="impact-icons"
-                                    />
-                                    <h4 class="impact-header font-paragraph">
-                                        / Perubahan Iklim
-                                    </h4>
-                                    <h3
-                                        class="impact-desc font-paragraph color-light"
-                                    >
-                                        Pembakaran sampah menghasilkan emisi gas
-                                        rumah kaca.
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tagline-img" style="flex-grow: 2">
+                  <img
+                    src="https://i.ibb.co/8j7Czb2/hero-1.png"
+                    id="tagline-hero-img"
+                  />
                 </div>
-            </section>
-
-            <section class="factor">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h1
-                                class="factor-title poppins-bold font-title color-light mt-5"
-                            >
-                                Faktor-faktor penyebab <br />
-                                penumpukan sampah
-                            </h1>
-                            <div class="card-box mt-4 slider-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide slider-item">
-                                        <div
-                                            class="col-sm-7 col-md-7 col-lg-7 my-auto p-3"
-                                        >
-                                            <h1
-                                                class="factor-title poppins-bold font-title color-light"
-                                            >
-                                                KURANGNYA TPA
-                                            </h1>
-                                            <ul id="first-swiper-slide">
-                                                <li
-                                                    class="factor-item color-light poppins-medium font-paragraph"
-                                                >
-                                                    Volume sampah sangat besar
-                                                    dan tidak diimbangi oleh
-                                                    daya tamping TPA sehingga
-                                                    melebihi kapasitasnya.
-                                                </li>
-                                                <button
-                                                    onclick="this.style.display = 'none';handleFirstCard(); hideElements()"
-                                                    id="btn-hidden"
-                                                    class="factor-item color-light poppins-medium font-paragraph"
-                                                >
-                                                    .....baca selengkapnya
-                                                </button>
-                                                <li
-                                                    class="factor-hidden-item color-light poppins-medium font-paragraph"
-                                                >
-                                                    Lahan TPA semakin menyempit
-                                                    akibat tergusur oleh
-                                                    pengunaan lain.
-                                                </li>
-                                                <li
-                                                    class="factor-hidden-item color-light poppins-medium font-paragraph"
-                                                >
-                                                    Jarak TPA dan pusat sampah
-                                                    relatif jauh hingga waktu
-                                                    untuk menganggut sampah
-                                                    kurang efektif.
-                                                </li>
-                                                <li
-                                                    class="factor-hidden-item color-light poppins-medium font-paragraph"
-                                                >
-                                                    Fasilitas pengakutan sampah
-                                                    terbatas dan tidak mampu
-                                                    menganggut seluruh sampah.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 col-lg-5">
-                                            <img
-                                                src="assets/images/factor-1.png"
-                                                class="factor-img"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="swiper-slide slider-item d-flex"
-                                    >
-                                        <div
-                                            class="col-sm-7 col-md-7 col-lg-7 my-auto p-3"
-                                        >
-                                            <h1
-                                                class="factor-title poppins-bold font-title color-light"
-                                            >
-                                                PRODUK SEKALI PAKAI
-                                            </h1>
-                                            <p
-                                                class="factor-desc font-paragraph color-light lh-base poppins-medium"
-                                            >
-                                                Salah satu faktor utama yang
-                                                berkontribusi terhadap pemanasan
-                                                global. Ketika industri
-                                                menghasilkan energi atau
-                                                memproduksi barang, mereka
-                                                seringkali menggunakan bahan
-                                                bahan bakar fosil seperti batu
-                                                bara, minyak, dan gas alam.
-                                                Proses pembakaran bahan bakar
-                                                ini menghasilkan emisi gas rumah
-                                                kaca, terutama karbon dioksida
-                                                (CO2) dan metana (CH4)
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 col-lg-5">
-                                            <img
-                                                src="assets/images/factor-2.png"
-                                                class="factor-img"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tagline-text-2" style="flex-grow: 5">
+                  <h1 class="tagline-text-2 poppins-bold">FOR BETTER</h1>
+                  <div class="tagline-wrapper">
+                    <div class="tagline-card poppins-bold">GENERATION</div>
+                    <h1 class="tagline-text-2 poppins-bold">FUTURE</h1>
+                  </div>
                 </div>
-            </section>
-
-            <section class="solution mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h1
-                                class="solution-title poppins-bold font-title color-light text-center mt-5"
-                            >
-                                Solusi Pencemaran <br />
-                                Sampah
-                            </h1>
-                            <div class="solution-content">
-                                <hr class="line" />
-                                <div class="solution-row">
-                                    <p class="solution-desc poppins-bold">
-                                        / Tindakan Individu
-                                    </p>
-                                    <p class="solution-desc poppins-bold">
-                                        Praktik Pengelolaan Sampah yang
-                                        Berkelanjutan
-                                    </p>
-                                    <p class="solution-desc poppins-medium">
-                                        Setiap individu dapat memulai dengan
-                                        mempraktikkan pengelolaan sampah yang
-                                        berkelanjutan, seperti memisahkan sampah
-                                        organik dan non-organik, mendaur ulang,
-                                        dan mengurangi pembuangan sampah ke
-                                        tempat pembuangan sampah ilegal.
-                                    </p>
-                                </div>
-                                <hr class="line" />
-                                <div class="solution-row">
-                                    <p class="solution-desc poppins-bold">
-                                        / Tindakan Komunitas
-                                    </p>
-                                    <p class="solution-desc poppins-bold">
-                                        Kampanye Pembersihan Komunitas
-                                    </p>
-                                    <p class="solution-desc poppins-medium">
-                                        Komunitas dapat mengorganisir kampanye
-                                        pembersihan berkala di daerah mereka
-                                        untuk membersihkan sampah dan
-                                        mengedukasi masyarakat tentang
-                                        pentingnya menjaga lingkungan bersih.
-                                    </p>
-                                </div>
-                                <hr class="line" />
-                                <div class="solution-row">
-                                    <p class="solution-desc poppins-bold">
-                                        / Tindakan Pemerintah
-                                    </p>
-                                    <p class="solution-desc poppins-bold">
-                                        Kebijakan Pengurangan Plastik Sekali
-                                        Pakai
-                                    </p>
-                                    <p class="solution-desc poppins-medium">
-                                        Pemerintah dapat mengenakan pajak atau
-                                        melarang penggunaan plastik sekali
-                                        pakai, serta mendorong penggunaan
-                                        alternatif ramah lingkungan.
-                                    </p>
-                                </div>
-                                <hr class="line" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tagline-footer mt-5">
-                <div class="container d-flex justify-content-center">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <img
-                                src="assets/images/footer-tagline.png"
-                                class="img-fluid"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="mt-5">
-            <hr class="line" />
-            <div class="container">
-                <div class="footer-container">
-                    <div class="footer-left col-sm-7 col-md-10 col-lg-10">
-                        <h3 class="footer-header poppins-medium">
-                            Tentang RecycleHub
-                        </h3>
-                        <p class="footer-desc" id="description">
-                            RecycleHub bertujuan untuk mengurangi sampah dengan
-                            menyajikan konten edukasi dan daur ulang untuk masa
-                            depan yang lebih baik di generasi selanjutnya.
-                        </p>
-                        <div class="input-container">
-                            <input
-                                type="text"
-                                placeholder="Masukkan Email..."
-                                class="font-paragraph poppins-regular"
-                            />
-                            <button
-                                type="submit"
-                                class="poppins-bold font-paragraph"
-                            >
-                                Kirim
-                            </button>
-                        </div>
-                        <div class="footer-row">
-                            <ul class="no-indent">
-                                <li>
-                                    <a
-                                        href="pages/gallery.html"
-                                        class="color-light font-paragraph"
-                                        >Galeri</a
-                                    >
-                                </li>
-                                <li>Informasi</li>
-                                <li>Produk</li>
-                                <li>Bantuan</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer-right col-sm-5 col-md-2 col-lg-2 my-">
-                        <p class="footer-credit poppins-regular">
-                            Copyright ©2023, RecycleHub.
-                        </p>
-                    </div>
-                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script>
-            var swiper = new Swiper(".slider-container", {
-                slidesPerView: "auto",
-                spaceBetween: 30,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
-    </body>
+      <section class="hero-2 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="card-box hero-wrapper d-flex align-items-center">
+                <div class="hero-text" style="flex-grow: 4">
+                  <h1 class="hero-header poppins-bold font-title color-light">
+                    Kenali lebih dalam permasalahan sampah
+                  </h1>
+                  <h4
+                    class="hero-desc poppins-regular font-paragraph color-light lh-base mt-4"
+                  >
+                    Seperti yang kita ketahui, sampah merupakan salah satu
+                    permasalahan yang sedang di selesaikan, namun seringkali
+                    masyarakat masih membuang sampah sembarangan dan masih
+                    banyak sampah yang tidak terkelola dengan baik. RecycleHub
+                    hadir untuk membantu mengatasi permasalahan sampah.
+                  </h4>
+                  <button class="btn-cta mt-4" onclick="alert('test')">
+                    <div class="wrapper d-flex align-items-center">
+                      <p class="cta-text poppins-bold font-paragraph my-auto">
+                        Pelajari lebih lanjut
+                      </p>
+                      <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </div>
+                  </button>
+                </div>
+                <div style="flex-grow: 2"></div>
+                <div class="hero-img" style="flex-grow: 6">
+                  <img src="assets/images/hero-2.png" class="w-75" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <header>
+                <h1
+                  class="impact-title poppins-bold font-title color-light text-center mt-5"
+                >
+                  Dampak Sampah Pada Lingkungan
+                </h1>
+              </header>
+              <div class="grid-container">
+                <div class="grid-item item-1">
+                  <img
+                    src="https://i.ibb.co/0fTLMK0/botol.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Pencemaran Lingkungan
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Sampah yang tidak dikelola dengan baik mencemari udara,
+                    tanah, dan air.
+                  </h3>
+                </div>
+                <div class="grid-item item-2">
+                  <img
+                    src="https://i.ibb.co/CPjp60g/tupai.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Kehilangan Habitat
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Tumpukan sampah merusak habitat alami dan mengancam spesies.
+                  </h3>
+                </div>
+                <div class="grid-item item-3">
+                  <img
+                    src="https://i.ibb.co/NTQrjMj/tikus.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Kesehatan Masyarakat
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Sampah dapat menyebabkan penyebaran penyakit dan masalah
+                    kesehatan.
+                  </h3>
+                </div>
+                <div class="grid-item item-4">
+                  <img
+                    src="https://i.ibb.co/g9BjBFH/rumah.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Kerusakan Estetika
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Sampah merusak penampilan lingkungan dan daerah wisata.
+                  </h3>
+                </div>
+                <div class="grid-item item-5">
+                  <img
+                    src="https://i.ibb.co/tKrTXyR/pohon.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Gangguan Ekosistem
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Pengelolaan sampah yang buruk mengganggu keseimbangan alam.
+                  </h3>
+                </div>
+                <div class="grid-item item-6">
+                  <img
+                    src="https://i.ibb.co/sqVmyvD/babi.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Kerugian Ekonomi
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Masalah sampah menimbulkan biaya tinggi dan kerusakan
+                    infrastruktur.
+                  </h3>
+                </div>
+                <div class="grid-item item-7">
+                  <img
+                    src="https://i.ibb.co/mS42zmW/udara.png"
+                    class="impact-icons"
+                  />
+                  <h4 class="impact-header font-paragraph">
+                    / Perubahan Iklim
+                  </h4>
+                  <h3 class="impact-desc font-paragraph color-light">
+                    Pembakaran sampah menghasilkan emisi gas rumah kaca.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="factor">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <h1 class="factor-title poppins-bold font-title color-light mt-5">
+                Faktor-faktor penyebab <br />
+                penumpukan sampah
+              </h1>
+              <div class="card-box mt-4 slider-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-item">
+                    <div class="col-sm-7 col-md-7 col-lg-7 my-auto p-3">
+                      <h1
+                        class="factor-title poppins-bold font-title color-light"
+                      >
+                        KURANGNYA TPA
+                      </h1>
+                      <ul id="first-swiper-slide">
+                        <li
+                          class="factor-item color-light poppins-medium font-paragraph"
+                        >
+                          Volume sampah sangat besar dan tidak diimbangi oleh
+                          daya tamping TPA sehingga melebihi kapasitasnya.
+                        </li>
+                        <button
+                          onclick="this.style.display = 'none';handleFirstCard(); hideElements()"
+                          id="btn-hidden"
+                          class="factor-item color-light poppins-medium font-paragraph"
+                        >
+                          .....baca selengkapnya
+                        </button>
+                        <li
+                          class="factor-hidden-item color-light poppins-medium font-paragraph"
+                        >
+                          Lahan TPA semakin menyempit akibat tergusur oleh
+                          pengunaan lain.
+                        </li>
+                        <li
+                          class="factor-hidden-item color-light poppins-medium font-paragraph"
+                        >
+                          Jarak TPA dan pusat sampah relatif jauh hingga waktu
+                          untuk menganggut sampah kurang efektif.
+                        </li>
+                        <li
+                          class="factor-hidden-item color-light poppins-medium font-paragraph"
+                        >
+                          Fasilitas pengakutan sampah terbatas dan tidak mampu
+                          menganggut seluruh sampah.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                      <img
+                        src="assets/images/factor-1.png"
+                        class="factor-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide slider-item d-flex">
+                    <div class="col-sm-7 col-md-7 col-lg-7 my-auto p-3">
+                      <h1
+                        class="factor-title poppins-bold font-title color-light"
+                      >
+                        PRODUK SEKALI PAKAI
+                      </h1>
+                      <p
+                        class="factor-desc font-paragraph color-light lh-base poppins-medium"
+                      >
+                        Salah satu faktor utama yang berkontribusi terhadap
+                        pemanasan global. Ketika industri menghasilkan energi
+                        atau memproduksi barang, mereka seringkali menggunakan
+                        bahan bahan bakar fosil seperti batu bara, minyak, dan
+                        gas alam. Proses pembakaran bahan bakar ini menghasilkan
+                        emisi gas rumah kaca, terutama karbon dioksida (CO2) dan
+                        metana (CH4)
+                      </p>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                      <img
+                        src="assets/images/factor-2.png"
+                        class="factor-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="solution mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <h1
+                class="solution-title poppins-bold font-title color-light text-center mt-5"
+              >
+                Solusi Pencemaran <br />
+                Sampah
+              </h1>
+              <div class="solution-content">
+                <hr class="line" />
+                <div class="solution-row">
+                  <p class="solution-desc poppins-bold">/ Tindakan Individu</p>
+                  <p class="solution-desc poppins-bold">
+                    Praktik Pengelolaan Sampah yang Berkelanjutan
+                  </p>
+                  <p class="solution-desc poppins-medium">
+                    Setiap individu dapat memulai dengan mempraktikkan
+                    pengelolaan sampah yang berkelanjutan, seperti memisahkan
+                    sampah organik dan non-organik, mendaur ulang, dan
+                    mengurangi pembuangan sampah ke tempat pembuangan sampah
+                    ilegal.
+                  </p>
+                </div>
+                <hr class="line" />
+                <div class="solution-row">
+                  <p class="solution-desc poppins-bold">/ Tindakan Komunitas</p>
+                  <p class="solution-desc poppins-bold">
+                    Kampanye Pembersihan Komunitas
+                  </p>
+                  <p class="solution-desc poppins-medium">
+                    Komunitas dapat mengorganisir kampanye pembersihan berkala
+                    di daerah mereka untuk membersihkan sampah dan mengedukasi
+                    masyarakat tentang pentingnya menjaga lingkungan bersih.
+                  </p>
+                </div>
+                <hr class="line" />
+                <div class="solution-row">
+                  <p class="solution-desc poppins-bold">
+                    / Tindakan Pemerintah
+                  </p>
+                  <p class="solution-desc poppins-bold">
+                    Kebijakan Pengurangan Plastik Sekali Pakai
+                  </p>
+                  <p class="solution-desc poppins-medium">
+                    Pemerintah dapat mengenakan pajak atau melarang penggunaan
+                    plastik sekali pakai, serta mendorong penggunaan alternatif
+                    ramah lingkungan.
+                  </p>
+                </div>
+                <hr class="line" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tagline-footer mt-5">
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <img src="assets/images/footer-tagline.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5">
+      <hr class="line" />
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-left col-sm-7 col-md-10 col-lg-10">
+            <h3 class="footer-header poppins-medium">Tentang RecycleHub</h3>
+            <p class="footer-desc" id="description">
+              RecycleHub bertujuan untuk mengurangi sampah dengan menyajikan
+              konten edukasi dan daur ulang untuk masa depan yang lebih baik di
+              generasi selanjutnya.
+            </p>
+            <div class="input-container">
+              <input
+                type="text"
+                placeholder="Masukkan Email..."
+                class="font-paragraph poppins-regular"
+              />
+              <button type="submit" class="poppins-bold font-paragraph">
+                Kirim
+              </button>
+            </div>
+            <div class="footer-row">
+              <ul class="no-indent">
+                <li>
+                  <a
+                    href="pages/gallery.html"
+                    class="color-light font-paragraph"
+                    >Galeri</a
+                  >
+                </li>
+                <li>Informasi</li>
+                <li>Produk</li>
+                <li>Bantuan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right col-sm-5 col-md-2 col-lg-2 my-">
+            <p class="footer-credit poppins-regular">
+              Copyright ©2023, RecycleHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      var swiper = new Swiper(".slider-container", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
