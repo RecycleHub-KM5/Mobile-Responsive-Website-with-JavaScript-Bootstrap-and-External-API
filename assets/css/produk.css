@@ -1,0 +1,75 @@
+.container-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    width: 40%;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+}
+
+.img-container {
+    height: 20rem;
+    background: url(https://cdn.discordapp.com/attachments/1153638653332029440/1162316307522388050/produk0.png);
+}
+
+.card-filter {
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+}
+
+.img-product {
+    height: 50%;
+    width: auto;
+}
+
+.col-2 {
+    padding: 0;
+}
+
+.inputt {
+    background: transparent;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.bx {
+    color: white;
+}
+
+/*contoh2*/
+/*support google chrome*/
+.inputt{
+    color: white;
+}
+ 
+.inputt::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.685);
+}
+ 
+/*support mozilla*/
+.inputt:-moz-input-placeholder{
+    color: rgba(255, 255, 255, 0.685);
+}
+ 
+/*support internet explorer*/
+.inputt:-ms-input-placeholder{
+    color: rgba(255, 255, 255, 0.685);
+
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
