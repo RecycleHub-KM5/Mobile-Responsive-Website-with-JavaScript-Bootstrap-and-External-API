@@ -73,3 +73,20 @@ textarea:focus, input:focus{
 *:focus {
     outline: none;
 }
+.ajakan {
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+    }
+.sectionakhir{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
