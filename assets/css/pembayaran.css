@@ -50,3 +50,50 @@ section{
     justify-content: center;
     gap: 2rem;
 }
+.dropdown{
+width: 35vw;
+color: #2222;
+}
+.secfooter{
+    height: 20vh;
+    width: 100vw;
+}
+#alamat{
+    display: flex;
+    justify-content: center;
+}
+.ringkasan {
+    display: flex;
+    justify-content: space-between;
+}
+.belanja{
+    background-color: rgb(26, 25, 25);
+    width: 15vw;
+    height: 21vw;
+    color: white;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+.card-payment{
+    display: flex;
+    justify-content: center;
+}
+.biaya{
+    display: flex;
+    justify-content: space-between;
+}
+.button-payment{
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #22cf3f;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 90px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
