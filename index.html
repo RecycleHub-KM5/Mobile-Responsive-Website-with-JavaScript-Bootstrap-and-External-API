@@ -78,12 +78,16 @@
                                                 <li class="nav-item">
                                                     <a
                                                         class="nav-link color-light poppins-medium font-paragraph ms-3 me-5"
+                                                        href="/pages/produk.html"
                                                         >Produk</a
                                                     >
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="wrapper ms-3">
+                                        <div
+                                            class="wrapper ms-3"
+                                            id="btn-wrapper-auth"
+                                        >
                                             <a
                                                 href="/pages/login.html"
                                                 id="btn-login"
@@ -96,6 +100,22 @@
                                                 onclick="window.location.href='/pages/register.html';"
                                             >
                                                 Daftar
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="wrapper btn-wrapper-none ms-3"
+                                            id="btn-wrapper-user"
+                                        >
+                                            <button id="btn-user">
+                                                <h3
+                                                    class="poppins-medium font-paragraph mt-2"
+                                                >
+                                                    Hallo, User
+                                                </h3>
+                                                <img
+                                                    src="https://i.ibb.co/gZyqXvV/dummy-ava.png"
+                                                    alt=""
+                                                />
                                             </button>
                                         </div>
                                     </div>
@@ -573,6 +593,8 @@
         ></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/script-global.js"></script>
+        <script src="assets/js/script-navbar.js"></script>
         <script>
             var swiper = new Swiper(".slider-container", {
                 slidesPerView: "auto",

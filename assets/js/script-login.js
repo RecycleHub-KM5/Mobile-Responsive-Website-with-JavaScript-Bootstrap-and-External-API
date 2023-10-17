@@ -34,13 +34,14 @@ submit.addEventListener("click", function (e) {
             }
 
             localStorage.setItem(
-                "usr",
+                "session",
                 JSON.stringify({
                     id: isUserExist.id,
                     name: isUserExist.name,
                     img: isUserExist.img,
                 })
             );
+            localStorage.setItem("status", true);
 
             window.location.href = "../index.html";
         });

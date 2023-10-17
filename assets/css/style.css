@@ -74,6 +74,30 @@ html {
     color: rgb(254, 254, 254, 0.65);
 }
 
+#btn-user {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    gap: 12px;
+    cursor: pointer;
+}
+
+#btn-user h3:hover {
+    color: #44d62c;
+}
+
+#btn-user h3 {
+    color: #fefefe;
+}
+
+#btn-user img {
+    width: 50px;
+    height: auto;
+}
+
 .tagline {
     display: flex;
     justify-content: center;
