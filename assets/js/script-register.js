@@ -52,37 +52,75 @@ submit.addEventListener("click", function () {
         return 0;
     }
 
-    postData({
-        url: `${network}/users`,
-        data: {
-            name,
-            email,
-            password,
-            img: "https://i.ibb.co/gZyqXvV/dummy-ava.png",
-        },
-    })
-        .then((res) => {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: "top-end",
-                showConfirmButton: false,
-                timer: 2000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener("mouseenter", Swal.stopTimer);
-                    toast.addEventListener("mouseleave", Swal.resumeTimer);
-                },
-            });
+    fetch(`${network}/users`)
+        .then((response) => response.json())
+        .then((users) => {
+            const isUserExist = users?.find((item) => item.email === email);
 
-            Toast.fire({
-                icon: "success",
-                title: "Selamat, akun berhasil dibuat!",
-            }).then(function () {
-                window.location.href = "../pages/login.html";
-            });
-        })
-        .catch((error) => {
-            console.error("Error:", error.message);
+            if (!isUserExist) {
+                postData({
+                    url: `${network}/users`,
+                    data: {
+                        name,
+                        email,
+                        password,
+                        img: "https://i.ibb.co/gZyqXvV/dummy-ava.png",
+                    },
+                })
+                    .then((res) => {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: "top-end",
+                            showConfirmButton: false,
+                            timer: 2000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener(
+                                    "mouseenter",
+                                    Swal.stopTimer
+                                );
+                                toast.addEventListener(
+                                    "mouseleave",
+                                    Swal.resumeTimer
+                                );
+                            },
+                        });
+
+                        Toast.fire({
+                            icon: "success",
+                            title: "Selamat, akun berhasil dibuat!",
+                        }).then(function () {
+                            window.location.href = "../pages/login.html";
+                        });
+                    })
+                    .catch((error) => {
+                        console.error("Error:", error.message);
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: "top-end",
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener(
+                                    "mouseenter",
+                                    Swal.stopTimer
+                                );
+                                toast.addEventListener(
+                                    "mouseleave",
+                                    Swal.resumeTimer
+                                );
+                            },
+                        });
+
+                        Toast.fire({
+                            icon: "error",
+                            title: "Terjadi kesalahan sistem!",
+                        });
+                    });
+                return 0;
+            }
+
             const Toast = Swal.mixin({
                 toast: true,
                 position: "top-end",
@@ -97,7 +135,7 @@ submit.addEventListener("click", function () {
 
             Toast.fire({
                 icon: "error",
-                title: "Terjadi kesalahan sistem!",
+                title: "Email sudah terdaftar!",
             });
         });
 });
