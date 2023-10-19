@@ -43,7 +43,11 @@ submit.addEventListener("click", function (e) {
             );
             localStorage.setItem("status", true);
 
-            window.location.href = "../index.html";
+            if (document.referrer.includes("/pages/register.html")) {
+                window.location.href = "../index.html";
+            } else {
+                history.back();
+            }
         });
 });
 
