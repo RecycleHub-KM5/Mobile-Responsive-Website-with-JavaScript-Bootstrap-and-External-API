@@ -19,6 +19,103 @@
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                  <div class="container-fluid">
+                      <a
+                          class="navbar-brand color-light poppins-bold"
+                          href="#"
+                          >RecycleHub</a
+                      >
+                      <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNav"
+                          aria-controls="navbarNav"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                      >
+                          <img src="../assets/icons/bar.svg" />
+                      </button>
+                      <div
+                          class="collapse navbar-collapse"
+                          id="navbarNav"
+                      >
+                          <div class="wrapper">
+                              <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                      <a
+                                          class="nav-link color-light poppins-medium font-paragraph ms-3"
+                                          aria-current="page"
+                                          href="../index.html"
+                                          >Home</a
+                                      >
+                                  </li>
+                                  <li class="nav-item">
+                                      <a
+                                          class="nav-link active color-light poppins-medium font-paragraph ms-3"
+                                          href="#"
+                                          >Galeri</a
+                                      >
+                                  </li>
+                                  <li class="nav-item">
+                                      <a
+                                          class="nav-link color-light poppins-medium font-paragraph ms-3"
+                                          href="../pages/informasi.html"
+                                          >Informasi</a
+                                      >
+                                  </li>
+                                  <li class="nav-item">
+                                      <a
+                                          class="nav-link color-light poppins-medium font-paragraph ms-3 me-5"
+                                          href="produk.html"
+                                          >Produk</a
+                                      >
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="wrapper ms-3" id="btn-wrapper-auth">
+                              <a
+                                  href="../pages/login.html"
+                                  id="btn-login"
+                                  class="poppins-semiBold"
+                                  >Masuk</a
+                              >
+                              <button
+                                  id="btn-register"
+                                  class="poppins-semiBold"
+                                  onclick="window.location.href='../pages/register.html';"
+                              >
+                                  Daftar
+                              </button>
+                          </div>
+                          <div
+                              class="wrapper btn-wrapper-none ms-3"
+                              id="btn-wrapper-user"
+                          >
+                              <button id="btn-user">
+                                  <h3
+                                      class="poppins-medium font-paragraph mt-2"
+                                  >
+                                      Hallo, User
+                                  </h3>
+                                  <img
+                                      src="https://i.ibb.co/gZyqXvV/dummy-ava.png"
+                                      alt=""
+                                  />
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </div>
+  </header>
 
   <section>
     <div class="container-search">
@@ -55,122 +152,12 @@
         <div class="col-10 color-light">
           <div>
             <h5>Untuk Kamu</h5>
-            <div class="d-flex justify-content-center">
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163650556720590932/produk2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Bunga Plastik</h6>
-                  <p class="opacity-75">Cocok ditempatkan di tembok sebagai pajangan</p>
-                  <p>Rp15.000</p>
-                </div>
+            <div id="list-product" class="d-flex justify-content-center">
+              
               </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163650328407834715/produk1.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Kura-Kura Plastik</h6>
-                  <p class="opacity-75">Cocok ditempatkan di rak sebagai pajangan</p>
-                  <p>Rp30.000</p>
-                </div>
               </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163650556410220604/produk3.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Celengan Plastik</h6>
-                  <p class="opacity-75">Celengan hewan yang terbuat dari plastik</p>
-                  <p>Rp30.000</p>
-                </div>
               </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163651683931390025/produk4.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Pajangan Pelangi Plastik</h6>
-                  <p class="opacity-75">Cocok ditempatkan di tembok sebagai pajangan</p>
-                  <p>Rp25.000</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-5">
-            <h5>Rekomendasi</h5>
-            <!-- --------------------------------------- -->
-            <div class="d-flex justify-content-center">
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163700505063731270/produk5.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Premium origami</h6>
-                  <p class="opacity-75">Hiasan rak atau meja yang berbahan kertas daur ulang</p>
-                  <p>Rp30.000</p>
-                </div>
-              </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163700504828842005/produk6.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Origami</h6>
-                  <p class="opacity-75">Cocok ditempatkan di tembok sebagai pajangan</p>
-                  <p>Rp5.000</p>
-                </div>
-              </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163700504614944788/produk7.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Frame Foto Kertas</h6>
-                  <p class="opacity-75">Frame yang terbuat dari kertas daur ulang</p>
-                  <p>Rp5.000</p>
-                </div>
-              </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163700504359088189/produk8.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Pistol Air</h6>
-                  <p class="opacity-75">barang daur ulang cocok menjadi teman bermain</p>
-                  <p>Rp50.000</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- --------------------------------------- -->
-            <div class="d-flex justify-content-center my-2">
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163701467216085052/produk9.png
-                " alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Kipas Kertas</h6>
-                  <p class="opacity-75">Kipas yang terbuat dari kertas daur ulang cocok untuk menyejukkan hari-hari anda</p>
-                  <p>Rp10.000</p>
-                </div>
-              </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163701466939265075/produk10.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Lampion Kertas</h6>
-                  <p class="opacity-75">Lampion cantik yang terbuat dari kertas daur ulang. COcok ditempatkan di ruangan rumah anda</p>
-                  <p>Rp25.000</p>
-                </div>
-              </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163701466595348480/produk11.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Tempat Tisu Kardus</h6>
-                  <p class="opacity-75">Tempat tisu dari kardus daur ulang ramah lingkungan</p>
-                  <p>Rp5.000</p>
-                </div>
-              </div>
-              <div class="card bg-dark mx-1" style="width: 18rem; height: 20rem;">
-                <img class="card-img-top img-product" src="https://cdn.discordapp.com/attachments/1153638653332029440/1163701466347864094/produk12.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-text">Rumah Kucing</h6>
-                  <p class="opacity-75">Rumah kucing yang terbuat dari kardus daur ulang. Cocok bagi anda yang ingin menghemat biaya</p>
-                  <p>Rp100.000</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+             
   <section class="sectionakhir">
     <p class="ajakan">
       <strong>Save the world, <br>
@@ -228,6 +215,9 @@
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script src="../assets/js/script-global.js"></script>
+  <script src="../assets/js/script-global.js"></script>
+  <script src="../assets/js/produk.js"></script>
 </body>
 
 </html>
