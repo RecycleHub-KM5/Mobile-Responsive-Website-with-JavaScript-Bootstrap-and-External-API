@@ -114,4 +114,14 @@ border-radius: 5% !important;
     width: 70vw;
     height: 50vh;
 }
-
+.accordion{
+    --bs-accordion-bg :#222;
+    --bs-accordion-color :#ffff;
+    --bs-accordion-btn-color :#ffff;
+    --bs-accordion-btn-icon-transition :#ffff;
+    --bs-accordion-btn-icon-transform :#ffff;
+    --bs-accordion-button-color :#ffff;
+    --bs-accordion-btn-active-icon :#ffff;
+    --bs-accordion-transition :#ffff;
+    --bs-accordion-transition :#ffff;
+}
