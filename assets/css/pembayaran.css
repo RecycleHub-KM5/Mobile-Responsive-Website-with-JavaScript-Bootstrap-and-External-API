@@ -1,17 +1,12 @@
-body{
+body {
     background-color: black;
     color: white;
 }
-.container {
-    margin: 0 5rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  a{
+a {
     text-decoration: none;
-    color:white;
-  }
-  .header{
+    color: white;
+}
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,47 +18,46 @@ body{
     align-items: center;
     z-index: 100;
 }
-logo{
+logo {
     font-size: 2.5rem;
     color: white;
     font-weight: 600;
     cursor: default;
 }
-.navbar a{
-    font-size: 1.7rem;
+.navbar a {
+    font-size: 14px;
     color: white;
     margin-left: 4rem;
-    transition: .3s;
+    transition: 0.3s;
 }
 .navbar a:hover,
 .navbar a.active {
     color: black;
 }
-.payment h5{
+.payment h5 {
     color: white;
     gap: 1rem;
-  
 }
-section{
+section {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
 }
-.produk{
+.produk {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
-.dropdown{
-width: 35vw;
-color: #2222;
-margin: 0;
-border-radius: 5% !important;
+.dropdown {
+    width: 35vw;
+    color: #2222;
+    margin: 0;
+    border-radius: 5% !important;
 }
 
-.secfooter{
+.secfooter {
     height: 20vh;
     width: 100vw;
 }
@@ -75,25 +69,29 @@ border-radius: 5% !important;
     display: flex;
     justify-content: space-between;
 }
-.belanja{
+.ringkasan p {
+    display: flex;
+    justify-content: space-between;
+}
+.belanja {
     background-color: rgb(26, 25, 25);
     width: 15vw;
-    height: 21vw;
+    height: auto;
     color: white;
     border-radius: 5%;
     padding: 1rem;
     margin-left: 1rem;
     justify-content: center;
 }
-.card-payment{
+.card-payment {
     display: flex;
     justify-content: center;
 }
-.biaya{
+.biaya {
     display: flex;
     justify-content: space-between;
 }
-.button-payment{
+.button-payment {
     font-family: sans-serif;
     font-size: 15px;
     background: #22cf3f;
@@ -107,21 +105,21 @@ border-radius: 5% !important;
     margin-bottom: 10px;
     text-decoration: none;
 }
-.card-payment{
+.card-payment {
     display: flex;
     justify-content: center;
     /* background-color: rgb(50, 50, 50); */
     width: 70vw;
     height: 50vh;
 }
-.accordion{
-    --bs-accordion-bg :#222;
-    --bs-accordion-color :#ffff;
-    --bs-accordion-btn-color :#ffff;
-    --bs-accordion-btn-icon-transition :#ffff;
-    --bs-accordion-btn-icon-transform :#ffff;
-    --bs-accordion-button-color :#ffff;
-    --bs-accordion-btn-active-icon :#ffff;
-    --bs-accordion-transition :#ffff;
-    --bs-accordion-transition :#ffff;
+.accordion {
+    --bs-accordion-bg: #222;
+    --bs-accordion-color: #ffff;
+    --bs-accordion-btn-color: #ffff;
+    --bs-accordion-btn-icon-transition: #ffff;
+    --bs-accordion-btn-icon-transform: #ffff;
+    --bs-accordion-button-color: #ffff;
+    --bs-accordion-btn-active-icon: #ffff;
+    --bs-accordion-transition: #ffff;
+    --bs-accordion-transition: #ffff;
 }

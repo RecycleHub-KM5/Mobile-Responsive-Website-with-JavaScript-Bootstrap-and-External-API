@@ -48,26 +48,26 @@
 
 /*contoh2*/
 /*support google chrome*/
-.inputt{
+.inputt {
     color: white;
 }
- 
-.inputt::-webkit-input-placeholder{
+
+.inputt::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.685);
 }
- 
+
 /*support mozilla*/
-.inputt:-moz-input-placeholder{
+.inputt:-moz-input-placeholder {
     color: rgba(255, 255, 255, 0.685);
 }
- 
+
 /*support internet explorer*/
-.inputt:-ms-input-placeholder{
+.inputt:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.685);
-
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
 *:focus {
@@ -82,19 +82,28 @@ textarea:focus, input:focus{
     justify-content: center;
     font-size: 60px;
     text-align: center;
-    }
-.sectionakhir{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        }
-#list-product{
+}
+.sectionakhir {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#list-product {
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
-a{
+a {
     text-decoration: none;
     color: white;
+}
+
+#btn-toDetail {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    color: #fefefe;
 }
