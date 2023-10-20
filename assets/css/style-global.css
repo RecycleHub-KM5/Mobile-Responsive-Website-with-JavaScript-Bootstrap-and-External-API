@@ -24,6 +24,12 @@
     justify-content: end;
 }
 
+#btn-wrapper-auth a {
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 14px;
+}
+
 #btn-login:hover {
     color: #44d62c;
 }
