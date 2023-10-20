@@ -1,0 +1,127 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+logo{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: black;
+}
+.payment h5{
+    color: white;
+    gap: 1rem;
+  
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.produk{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.dropdown{
+width: 35vw;
+color: #2222;
+margin: 0;
+border-radius: 5% !important;
+}
+
+.secfooter{
+    height: 20vh;
+    width: 100vw;
+}
+/* #alamat{
+    display: flex;
+    justify-content: center;
+} */
+.ringkasan {
+    display: flex;
+    justify-content: space-between;
+}
+.belanja{
+    background-color: rgb(26, 25, 25);
+    width: 15vw;
+    height: 21vw;
+    color: white;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+}
+.card-payment{
+    display: flex;
+    justify-content: center;
+}
+.biaya{
+    display: flex;
+    justify-content: space-between;
+}
+.button-payment{
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #22cf3f;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 90px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.card-payment{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(50, 50, 50); */
+    width: 70vw;
+    height: 50vh;
+}
+.accordion{
+    --bs-accordion-bg :#222;
+    --bs-accordion-color :#ffff;
+    --bs-accordion-btn-color :#ffff;
+    --bs-accordion-btn-icon-transition :#ffff;
+    --bs-accordion-btn-icon-transform :#ffff;
+    --bs-accordion-button-color :#ffff;
+    --bs-accordion-btn-active-icon :#ffff;
+    --bs-accordion-transition :#ffff;
+    --bs-accordion-transition :#ffff;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/pembayaran.css" />
+  <link rel="stylesheet" href="../assets/css/core.css" />
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                  <nav class="navbar navbar-expand-lg">
+                      <div class="container-fluid">
+                          <a
+                              class="navbar-brand color-light poppins-bold"
+                              href="#"
+                              >RecycleHub</a
+                          >
+                          <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#navbarNav"
+                              aria-controls="navbarNav"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                          >
+                              <img src="../assets/icons/bar.svg" />
+                          </button>
+                          <div
+                              class="collapse navbar-collapse"
+                              id="navbarNav"
+                          >
+                              <div class="wrapper">
+                                  <ul class="navbar-nav">
+                                      <li class="nav-item">
+                                          <a
+                                              class="nav-link color-light poppins-medium font-paragraph ms-3"
+                                              aria-current="page"
+                                              href="../index.html"
+                                              >Home</a
+                                          >
+                                      </li>
+                                      <li class="nav-item">
+                                          <a
+                                              class="nav-link color-light poppins-medium font-paragraph ms-3"
+                                              href="gallery.html"
+                                              >Galeri</a
+                                          >
+                                      </li>
+                                      <li class="nav-item">
+                                          <a
+                                              class="nav-link color-light poppins-medium font-paragraph ms-3"
+                                              href="../pages/informasi.html"
+                                              >Informasi</a
+                                          >
+                                      </li>
+                                      <li class="nav-item">
+                                          <a
+                                              class="nav-link color-light poppins-medium font-paragraph ms-3 me-5"
+                                              href="../pages/produk.html"
+                                              >Produk</a
+                                          >
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="wrapper ms-3" id="btn-wrapper-auth">
+                                  <a
+                                      href="../pages/login.html"
+                                      id="btn-login"
+                                      class="poppins-semiBold"
+                                      >Masuk</a
+                                  >
+                                  <button
+                                      id="btn-register"
+                                      class="poppins-semiBold"
+                                      onclick="window.location.href='../pages/register.html';"
+                                  >
+                                      Daftar
+                                  </button>
+                              </div>
+                              <div
+                                  class="wrapper btn-wrapper-none ms-3"
+                                  id="btn-wrapper-user"
+                              >
+                                  <button id="btn-user">
+                                      <h3
+                                          class="poppins-medium font-paragraph mt-2"
+                                      >
+                                          Hallo, User
+                                      </h3>
+                                      <img
+                                          src="https://i.ibb.co/gZyqXvV/dummy-ava.png"
+                                          alt=""
+                                      />
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      </header>
+
+    <section>
+        <div class="card-payment">
+        <div class="payment">
+            <h5>Produk yang dibeli</h5>
+            <div class="produk">
+                <div class="img-product">
+            <img src="https://cdn.discordapp.com/attachments/1153638653332029440/1163701466347864094/produk12.png">
+            </div>
+            <div class="desc-product">
+            <h6>Rumah Kucing</h6>
+            <p>Rumah kucing yang terbuat dari kardus daur ulang.<br> Cocok bagi anda yang ingin menghemat biaya</p>
+            <h6>1 x 100.000</h6>
+            </div>
+            </div>
+            <br>
+            <h5>Pengiriman dan Metode Pembayaran</h5>
+            <div>
+            <div class="accordion accordion-flush dropdown" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Big Smoke (6287816581361)<br>Jalan Supratman, DKI Jakarta
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Kantor RecycleHub (088877123765) <br> Jalan Tulip, Kota Bogor</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <img src="https://cdn.discordapp.com/attachments/1153638653332029440/1163828897717157908/dana_1.png" alt="gambardana">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Pembayaran Lainnya</div>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+
+        <div class="belanja">
+            <h5>Ringkasan Belanja</h5>
+            <h6>Total Belanja</h6>
+            <div class="ringkasan">
+            <div>
+            <p>Total Harga (1 barang)</p>
+            <p>Ongkos Kirim</p>
+            </div>
+            <div>
+                <p>Rp100.000</p>
+                <p>Rp9000</p>
+            </div>
+            </div>
+            <hr />
+            <h6>Biaya Transaksi</h6>
+            <div class="biaya">
+            <p>Biaya Layanan</p>
+            <p>Rp 1000</p>
+        </div>
+        <hr />
+        <div class="biaya">
+            <h6>Tagihan</h6>
+            <h6>110000</h6>
+        </div>
+        <hr />
+        <a class="button-payment" href="#" >Bayar</a>
+    </div>
+    </div>
+    </section>
+
+    <footer class="mt-5">
+        <hr class="line" />
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-left col-sm-7 col-md-10 col-lg-10">
+                    <h3 class="footer-header poppins-medium">
+                        Tentang RecycleHub
+                    </h3>
+                    <p class="footer-desc" id="description">
+                        RecycleHub bertujuan untuk mengurangi sampah dengan
+                        menyajikan konten edukasi dan daur ulang untuk masa
+                        depan yang lebih baik di generasi selanjutnya.
+                    </p>
+                    <div class="input-container">
+                        <input
+                            type="text"
+                            placeholder="Masukkan Email..."
+                            class="font-paragraph poppins-regular"
+                        />
+                        <button
+                            type="submit"
+                            class="poppins-bold font-paragraph"
+                        >
+                            Kirim
+                        </button>
+                    </div>
+                    <div class="footer-row">
+                        <ul class="no-indent">
+                            <li>
+                                <a
+                                    href="pages/gallery.html"
+                                    class="color-light font-paragraph"
+                                    >Galeri</a
+                                >
+                            </li>
+                            <li>Informasi</li>
+                            <li>Produk</li>
+                            <li>Bantuan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right col-sm-5 col-md-2 col-lg-2 my-">
+                    <p class="footer-credit poppins-regular">
+                        Copyright ©2023, RecycleHub.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    </html>
