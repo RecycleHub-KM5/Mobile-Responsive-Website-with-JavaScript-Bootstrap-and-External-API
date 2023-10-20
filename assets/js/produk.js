@@ -57,6 +57,7 @@ async function getProductFilter(filterParam) {
 
     product.map((items) => {
       listProduct.innerHTML += `
+      <button onclick="window.location.href='../pages/detail-produk.html';">
       <div class="card bg-dark mx-1 mb-5" style="width: 18rem; height: 20rem;">
               <img class="card-img-top img-product" src="${items.avatar}" alt="Card image cap">
               <div class="card-body">
@@ -65,6 +66,7 @@ async function getProductFilter(filterParam) {
                 <p>${items.Harga}</p>
               </div>
             </div>
+            </button>
       `;
     })
   } catch (error) {
